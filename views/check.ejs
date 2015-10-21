@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>验证</title>
+    <meta charset="UTF-8">
+    <link href='/stylesheets/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="login-03">
+    <div class="three-login  hvr-float-shadow">
+        <div class="three-login-head">
+            <img src="/images/top-key.png" alt=""/>
+            <h3>account reset</h3>
+            <lable></lable>
+        </div>
+        <form action="/auth/check" method="post">
+            <h5>Forgot Password or Username?</h5>
+            <p>To reset your account password or username, enter the
+                email address and we will send your instruction.</p>
+            <li>
+                <input type="text" class="text" name="code" ><a style="color:white; background-color: orangered; font-size: inherit" href="/sendcode" class=" icon3 mail2">发送验证码</a>
+            </li>
+            <div class="submit three">
+                <input type="submit"  value="SIGN UP" >
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

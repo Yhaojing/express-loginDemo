@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="UTF-8">
+	<link href='/stylesheets/style.css' rel='stylesheet' type='text/css'>
+	<!--//webfonts-->
+</head>
+<body>
+<div class="login-01">
+	<div class="one-login  hvr-float-shadow">
+		<div class="one-login-head">
+			<img src="/images/top-lock.png" alt=""/>
+			<h1>LOGIN</h1>
+			<span></span>
+		</div>
+		<form action="/auth/login" method="post">
+			<li>
+				<input type="text" name="username" class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" ><a href="#" class=" icon user"></a>
+			</li>
+			<li>
+				<input type="password" name="pwd" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"><a href="#" class=" icon lock"></a>
+			</li>
+			<li style="color: red">
+				<%= message%>
+			</li>
+			<div class="p-container">
+				<h6><a href="/auth/forget">Forgot Password ?</a> </h6>
+				<div class="clear"> </div>
+			</div>
+			<div class="submit">
+				<input type="submit" value="SIGN IN" >
+			</div>
+			<h5>Don't have an account ?<a style="color: darkblue" href="/auth/singup"> Sign Up </a></h5>
+		</form>
+	</div>
+</div>
+</body>
+</html>
